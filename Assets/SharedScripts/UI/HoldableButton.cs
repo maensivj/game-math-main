@@ -38,16 +38,18 @@ namespace GameMath.UI
 
         void Update()
         {
-            if (slider2 != null)
+
+            /*if (slider2 != null)
             {
                 Vector3 newPosition = trolley.transform.localPosition;
                 newPosition.x = Mathf.Lerp(nearLimit.transform.localPosition.x, farLimit.transform.localPosition.x, slider2.value);
+                newPosition.z = Mathf.Lerp(nearLimit.transform.localPosition.z, farLimit.transform.localPosition.z, slider2.value);
                 trolley.transform.localPosition = newPosition;
 
-                // Update cable distance based on trolley position
+                
                 cableXDistanceFromOrigin = Mathf.Sqrt(Mathf.Pow(newPosition.x, 2) + Mathf.Pow(newPosition.z, 2));
             }
-
+            */
             if (isPointerDown)
             {
                 currentAngle += rotationSpeedY * Time.deltaTime;
